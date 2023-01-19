@@ -53,7 +53,7 @@ public class Utils {
     }
 
     public static boolean patternMatches(String emailAddress) {
-        String regexPattern = "";
+        String regexPattern = "^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$";
         return Pattern.compile(regexPattern).matcher(emailAddress).matches();
     }
 
